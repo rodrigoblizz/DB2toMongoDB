@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Properties;
 import java.util.Date;
@@ -37,7 +38,7 @@ public class Execute {
                 writer.close();
     }
            
-    public static void main(String[] args) throws SQLException, IOException {
+    public static void main(String[] args) throws SQLException, IOException, ParseException {
     Properties prop = getProp();
         String typeString = prop.getProperty("prop.type");
         int type = Integer.parseInt(typeString);

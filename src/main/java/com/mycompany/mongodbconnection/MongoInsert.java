@@ -113,7 +113,7 @@ public class MongoInsert {
               
                 } else {
                     collection.update(key, document);
-                    System.out.println("ESSE JA TEM");
+                    System.out.println("ESSE JA TEM" + key);
                 }               
             }
         }

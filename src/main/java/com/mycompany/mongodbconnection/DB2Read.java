@@ -73,7 +73,7 @@ public class DB2Read {
         int columnCount = rsmd.getColumnCount();
         
         for (int i=1; i <= columnCount; i++){
-          listDB2Columns.add(rsmd.getColumnName(i));
+          listDB2Columns.add(rsmd.getColumnLabel(i));
         }
 
         DB2Connection.connectionDB2().close();
@@ -113,6 +113,8 @@ public class DB2Read {
         return encoding.decode(ByteBuffer.wrap(encoded)).toString();
     }
     
+    
+    // 
     static String updateDate() throws IOException, ParseException{
             String dateFile = readFile("executeDate.txt", StandardCharsets.UTF_8);
             
