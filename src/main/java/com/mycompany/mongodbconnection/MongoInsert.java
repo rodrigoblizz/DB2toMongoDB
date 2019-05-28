@@ -8,8 +8,6 @@ package com.mycompany.mongodbconnection;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
-import com.mongodb.DBObject;
 import static com.mycompany.mongodbconnection.Config.getProp;
 import java.io.IOException;
 import java.sql.SQLException;
